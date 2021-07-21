@@ -1,0 +1,169 @@
+fileFormatVersion: 2
+guid: 50a86d64f5d5a3e41bf53316232252bf
+timeCreated: 1509393366
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: H_DDS_HighRes
+    100002: H_DDS_HighRes1
+    100004: H_DDS_HighRes10
+    100006: H_DDS_HighRes11
+    100008: H_DDS_HighRes12
+    100010: H_DDS_HighRes13
+    100012: H_DDS_HighRes14
+    100014: H_DDS_HighRes15
+    100016: H_DDS_HighRes2
+    100018: H_DDS_HighRes3
+    100020: H_DDS_HighRes4
+    100022: H_DDS_HighRes5
+    100024: H_DDS_HighRes6
+    100026: H_DDS_HighRes7
+    100028: H_DDS_HighRes8
+    100030: H_DDS_HighRes9
+    100032: h_L_eye
+    100034: h_L_gland
+    100036: h_L_trans
+    100038: h_R_eye
+    100040: h_R_gland
+    100042: h_R_trans
+    100044: h_TeethDown
+    100046: h_TeethUp
+    100048: //RootNode
+    400000: H_DDS_HighRes
+    400002: H_DDS_HighRes1
+    400004: H_DDS_HighRes10
+    400006: H_DDS_HighRes11
+    400008: H_DDS_HighRes12
+    400010: H_DDS_HighRes13
+    400012: H_DDS_HighRes14
+    400014: H_DDS_HighRes15
+    400016: H_DDS_HighRes2
+    400018: H_DDS_HighRes3
+    400020: H_DDS_HighRes4
+    400022: H_DDS_HighRes5
+    400024: H_DDS_HighRes6
+    400026: H_DDS_HighRes7
+    400028: H_DDS_HighRes8
+    400030: H_DDS_HighRes9
+    400032: h_L_eye
+    400034: h_L_gland
+    400036: h_L_trans
+    400038: h_R_eye
+    400040: h_R_gland
+    400042: h_R_trans
+    400044: h_TeethDown
+    400046: h_TeethUp
+    400048: //RootNode
+    2300000: h_L_eye
+    2300002: h_L_gland
+    2300004: h_L_trans
+    2300006: h_R_eye
+    2300008: h_R_gland
+    2300010: h_R_trans
+    2300012: h_TeethDown
+    2300014: h_TeethUp
+    3300000: h_L_eye
+    3300002: h_L_gland
+    3300004: h_L_trans
+    3300006: h_R_eye
+    3300008: h_R_gland
+    3300010: h_R_trans
+    3300012: h_TeethDown
+    3300014: h_TeethUp
+    4300000: H_DDS_HighRes
+    4300002: h_TeethDown
+    4300004: h_R_trans
+    4300006: h_R_gland
+    4300008: h_R_eye
+    4300010: h_L_trans
+    4300012: h_L_eye
+    4300014: h_L_gland
+    4300016: h_TeethUp
+    6400000: H_DDS_HighRes
+    6400002: h_L_eye
+    6400004: h_L_gland
+    6400006: h_L_trans
+    6400008: h_R_eye
+    6400010: h_R_gland
+    6400012: h_R_trans
+    6400014: h_TeethDown
+    6400016: h_TeethUp
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: H_DDS_HighRes
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
