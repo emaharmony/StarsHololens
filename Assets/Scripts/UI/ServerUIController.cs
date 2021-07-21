@@ -85,7 +85,6 @@ public class ServerUIController : MonoBehaviour
 		}
 
 		DefaultAnimationButtonPreset ();
-		LateStart();
 	}
 
 	void LateStart()
@@ -260,17 +259,39 @@ public class ServerUIController : MonoBehaviour
 		PlayerNetworkController.Instance.CurrentAnimationValue = isOn ? value * 100 : 0;
 	}
 
-	public void UpdateCurrentSelection(int i)
+	public void UpdateCurrentSelection()
 	{
+		int index = animationChooser.value;
+
 		if (AnimationController.Instance != null) {
-			AnimationValueType val = AnimationController.Instance.GetAnimationValue (i - 1);
-			PlayerNetworkController.Instance.CurrentAnimationChosen = i - 1;
+			AnimationValueType val = AnimationController.Instance.GetAnimationValue (index - 1);
+			PlayerNetworkController.Instance.CurrentAnimationChosen = index - 1;
 			if (val != null) {
 				animationSwitch.isOn = val.IsOn;
 				animationValue.value = val.Value;
 				Debug.Log ("Update Animation --> " + val.Id + " to " + val.Value);
 			} else {
 			
+			}
+		}
+
+	}
+
+	public void UpdateCurrentSelection(int i )
+	{
+		if (AnimationController.Instance != null)
+		{
+			AnimationValueType val = AnimationController.Instance.GetAnimationValue(i - 1);
+			PlayerNetworkController.Instance.CurrentAnimationChosen = i - 1;
+			if (val != null)
+			{
+				animationSwitch.isOn = val.IsOn;
+				animationValue.value = val.Value;
+				Debug.Log("Update Animation --> " + val.Id + " to " + val.Value);
+			}
+			else
+			{
+
 			}
 		}
 

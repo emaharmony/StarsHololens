@@ -143,6 +143,12 @@ public class PlayerNetworkController : NetworkBehaviour
 			swapHeads.Instance.FacePresetSet (i);
 	}
 
+	void FaceColorSet(int i)
+	{
+		if(swapHeads.Instance != null)
+			swapHeads.Instance.FaceColorSet (i);
+	}
+
 	public int Age { get{ return ageVar;} set {ageVar = value; 
 			if (isServer)
 				ChangeAge (ageVar); }}
