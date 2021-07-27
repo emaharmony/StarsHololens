@@ -33,7 +33,7 @@ public class AnchorScript : MonoBehaviour
 		#if UNITY_EDITOR
 		LoadAnchors();
 		#else
-		WorldAnchorStore.GetAsync(AnchorStoreLoaded);
+		UnityEngine.XR.WSA.Persistence.WorldAnchorStore.GetAsync(AnchorStoreLoaded);
 		#endif
 	}
 		
@@ -119,7 +119,7 @@ public class AnchorScript : MonoBehaviour
 	{
 		myError.errorMsg = "saving anchor";
 		#if !UNITY_EDITOR
-		myAnchor = this.gameObject.AddComponent<WorldAnchor>();
+		myAnchor = this.gameObject.AddComponent<UnityEngine.XR.WSA.WorldAnchor>();
 		// Remove any previous worldanchor saved with the same name so we can save new one
 		if(store == null)
 		{

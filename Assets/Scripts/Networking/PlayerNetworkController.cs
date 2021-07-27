@@ -129,7 +129,7 @@ public class PlayerNetworkController : NetworkBehaviour
 
 	public int ServerColorIndex 
 	{
-		set{ serverColorIndex = (serverColorIndex + ((value < 0)? value + swapHeads.Instance.ColorLength : value)) % swapHeads.Instance.ColorLength; Debug.Log (serverColorIndex);}
+		set{ serverColorIndex = (serverColorIndex + ((value < 0)? value + swapHeads.Instance.ColorLength : value)) % swapHeads.Instance.ColorLength;}
 	}
 
 	public int ServerPresetIndex 

@@ -20,7 +20,7 @@ public class DraggableUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 	{
 		Canvas can = GetComponentInParent<Canvas> ();
 		if (can != null) {
-			Debug.Log ("No Canvas");
+
 		}
 	}
 

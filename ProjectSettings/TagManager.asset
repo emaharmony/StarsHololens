@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Border
+  - DraggableUI
+  - WindowArea
+  - AnimationButtons
+  - SpatialMapping
+  - RequiredPanel
+  - HomePanel
+  - Console_menu
   layers:
   - Default
   - TransparentFX

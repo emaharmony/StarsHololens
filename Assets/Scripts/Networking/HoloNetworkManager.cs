@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
-
+using TMPro; 
 public class HoloNetworkManager : NetworkManager 
 {
 
@@ -17,7 +17,7 @@ public class HoloNetworkManager : NetworkManager
 	[SerializeField] Button serverButton;
 	[SerializeField] Button clientButton;
 
-	Text connecting = null;
+	TMP_Text connecting = null;
 	GameObject eventSystem;
 
 	public static HoloNetworkManager Instance { get; private set;}
@@ -25,7 +25,7 @@ public class HoloNetworkManager : NetworkManager
 	void Awake()
 	{
 		Instance = this;
-		connecting = connectingPanel.GetComponentInChildren<Text> ();
+		connecting = connectingPanel.GetComponentInChildren<TMP_Text> ();
         networkPort = SERVER_PORT;
         networkAddress = SERVER_IPADDRESS;
 		eventSystem = GameObject.Find ("EventSystem");
@@ -36,9 +36,17 @@ public class HoloNetworkManager : NetworkManager
         IpScript.Instance.UpdateMyIpAddress(networkAddress);
         ErrorHandler.Instance.errorMsg = (networkAddress + " --> " + networkPort);
         connectingPanel.SetActive (false);
-		animationCanvas.SetActive (false);
+		if (myCanvas != null)
+			animationCanvas.SetActive(false);
+		else
+			animationCanvas.SetActive(true);
 		StartCoroutine (CheckIP ());
-		clientButton.enabled = serverButton.enabled = true;
+
+		if (clientButton != null)
+		clientButton.enabled =  true;
+		if (serverButton != null)
+		serverButton.enabled = true;
+
 		AudioManager.Instance.playDing ();
 	}
 
@@ -54,7 +62,10 @@ public class HoloNetworkManager : NetworkManager
 		myExtIP = myExtIP.TrimEnd ();
 		networkAddress = myExtIP;
 		IpScript.Instance.UpdateMyIpAddress(networkAddress);
-		clientButton.enabled = serverButton.enabled = true;
+		if (clientButton != null)
+			clientButton.enabled = true;
+		if (serverButton != null)
+			serverButton.enabled = true;
 		AudioManager.Instance.playDing ();
         ErrorHandler.Instance.errorMsg = "Checking IP";
 	}
@@ -145,7 +156,6 @@ public class HoloNetworkManager : NetworkManager
 		{
 			eventSystem.SetActive (true);
 		}
-		Debug.Log ("Start Server");
 
     }
 

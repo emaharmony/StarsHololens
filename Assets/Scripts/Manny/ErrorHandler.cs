@@ -45,6 +45,8 @@ public class ErrorHandler : MonoBehaviour
 		int count = 10;
 		while(count > 0)
 		{
+			if (sprite == null) break;
+
 			sprite.SetActive(!sprite.activeSelf);
 			yield return new WaitForSeconds(.35f);
 			--count;
@@ -53,6 +55,7 @@ public class ErrorHandler : MonoBehaviour
 		
 	public void outputToConsole()
 	{
+		if (errorText == null) return;
 		errorText.text = errorMsg;
 	}
 

@@ -85,11 +85,15 @@ public class ServerUIController : MonoBehaviour
 		}
 
 		DefaultAnimationButtonPreset ();
+		LateStart();
 	}
 
 	void LateStart()
 	{
+		if (swapHeads.Instance == null) return;
+
 		facePresetLabel.text = (swapHeads.Instance.current + 1) + "/" + swapHeads.Instance.PresetLength;
+	
 		faceColorLabel.text = (swapHeads.Instance.colorIndex + 1) + "/" + swapHeads.Instance.ColorLength;
 	}
 		
@@ -129,41 +133,41 @@ public class ServerUIController : MonoBehaviour
 	{
         if (AnimationController.Instance != null)
         {
-            if (!AnimationController.Instance.MixFlag && currActiveButtons.Count > 0)
-            {
-                TurnOffAllActiveButtons();
-            }
-            else if (butt != mixButton)
-            {
-                DeactivateAnimationButton(defaultOnButton);
-            }
+            //if (!AnimationController.Instance.MixFlag && currActiveButtons.Count > 0)
+            //{
+            //    TurnOffAllActiveButtons();
+            //}
+            //else if (butt != mixButton)
+            //{
+            //    DeactivateAnimationButton(defaultOnButton);
+            //}
 
-            if (!currActiveButtons.Contains(butt))
-            {
-                currActiveButtons.Add(butt);
-                butt.ToggleButtonColor();
-            }
+            //if (!currActiveButtons.Contains(butt))
+            //{
+            //    currActiveButtons.Add(butt);
+            //    butt.ToggleButtonColor();
+            //}
         }
 	}
 
 	public void DeactivateAnimationButton(ServerUIAnimationButton butt)
 	{
-		if (currActiveButtons.Contains (butt)) 
-		{
-			currActiveButtons.Remove (butt);
-			butt.ToggleButtonColor ();
-		}
+		//if (currActiveButtons.Contains (butt)) 
+		//{
+		//	currActiveButtons.Remove (butt);
+		//	butt.ToggleButtonColor ();
+		//}
 	}
 
 	public void TurnOffAllActiveButtons()
 	{
-		foreach (ServerUIAnimationButton b in currActiveButtons) 
-		{
-			b.SetButtonIO (false);
-		}
+		//foreach (ServerUIAnimationButton b in currActiveButtons) 
+		//{
+		//	b.SetButtonIO (false);
+		//}
 				
-		mixButton.SetButtonIO (AnimationController.Instance.MixFlag);
-		currActiveButtons.Clear ();
+		//mixButton.SetButtonIO (AnimationController.Instance.MixFlag);
+		//currActiveButtons.Clear ();
 	}
 
 	public void DefaultAnimationButtonPreset()
@@ -174,7 +178,7 @@ public class ServerUIController : MonoBehaviour
 		if(currActiveButtons.Count > 0)
 			currActiveButtons.Clear ();
 
-        if(AnimationController.Instance != null)
+        if(AnimationController.Instance != null && mixButton != null)
 		    mixButton.SetButtonIO (AnimationController.Instance.MixFlag);
 		ActivateAnimationButton (defaultOnButton);
 

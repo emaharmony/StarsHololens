@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class IpScript : MonoBehaviour 
 {
-	public Text myIpAddress;
+	public TMP_Text myIpAddress;
 	//public Text myInput;
-	public InputField myInput;
+	public TMP_InputField myInput;
 	AudioManager myAudio;
 
 	public static IpScript Instance {get; private set;}
