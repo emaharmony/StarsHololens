@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Imported Assets/HoloFace/scene.unity
+    guid: 18db9644c15f8294ba1088c5dc7611ae
+  - enabled: 1
     path: Assets/Scene/Server.unity
     guid: 5bba9c7340178e04bb4d7686feee7d5f
   m_configObjects: {}
