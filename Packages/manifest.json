@@ -1,5 +1,9 @@
 {
   "dependencies": {
+    "com.microsoft.mixedreality.toolkit.gpustats": "file:MixedReality/com.microsoft.mixedreality.toolkit.gpustats-1.0.2.tgz",
+    "com.microsoft.mixedreality.webrtc": "file:MixedReality/com.microsoft.mixedreality.webrtc-2.0.2.tgz",
+    "com.microsoft.mixedreality.webrtc.samples": "file:MixedReality/com.microsoft.mixedreality.webrtc.samples-2.0.2.tgz",
+    "com.microsoft.windows.mixedreality.dotnetwinrt": "file:MixedReality/com.microsoft.windows.mixedreality.dotnetwinrt-0.5.2009.tgz",
     "com.unity.ads": "2.0.8",
     "com.unity.analytics": "3.2.3",
     "com.unity.collab-proxy": "1.2.16",

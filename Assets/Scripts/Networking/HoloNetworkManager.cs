@@ -6,8 +6,8 @@ using TMPro;
 public class HoloNetworkManager : NetworkManager 
 {
 
-    const string SERVER_IPADDRESS = "10.0.1.17";
-    const int SERVER_PORT = 6666;
+    const string SERVER_IPADDRESS = "localhost";
+    const int SERVER_PORT = 80;
     [Space(2)]
     [Header("Hololens Vars")]
 	[SerializeField] GameObject networkUI;

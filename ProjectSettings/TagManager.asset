@@ -12,6 +12,7 @@ TagManager:
   - RequiredPanel
   - HomePanel
   - Console_menu
+  - Pivot
   layers:
   - Default
   - TransparentFX

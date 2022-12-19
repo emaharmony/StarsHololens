@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 114272005056909494}
   m_Layer: 0
   m_Name: pivot
-  m_TagString: Untagged
+  m_TagString: Pivot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -326,7 +326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DefaultGazeDistance: 2
-  SavedAnchorFriendlyName: SavedAnchorFriendlyName
+  SavedAnchorFriendlyName: Pivot
   PlaceParentOnTap: 0
   ParentGameObjectToPlace: {fileID: 0}
   IsBeingPlaced: 0
@@ -10074,7 +10074,6 @@ GameObject:
   - component: {fileID: 65912939125987710}
   - component: {fileID: 114950093204883380}
   - component: {fileID: 114838873536642712}
-  - component: {fileID: 114789193123528090}
   - component: {fileID: 114073997124361420}
   - component: {fileID: 114473044348564712}
   - component: {fileID: 114641918207266718}
@@ -10178,39 +10177,6 @@ MonoBehaviour:
   - {fileID: 1917392362107320}
   current: 0
   colorIndex: 2
---- !u!114 &114789193123528090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1925784708439070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 0
-    i1: 0
-    i2: 0
-    i3: 0
-    i4: 0
-    i5: 0
-    i6: 0
-    i7: 0
-    i8: 0
-    i9: 0
-    i10: 0
-    i11: 0
-    i12: 0
-    i13: 0
-    i14: 0
-    i15: 0
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
 --- !u!114 &114073997124361420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10258,15 +10224,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DefaultGazeDistance: 2
-  SavedAnchorFriendlyName: SavedAnchorFriendlyName
+  SavedAnchorFriendlyName: Player
   PlaceParentOnTap: 0
   ParentGameObjectToPlace: {fileID: 0}
   IsBeingPlaced: 0
   AllowMeshVisualizationControl: 1
-  x: 0
+  x: 1
   y: 0
-  z: 0
-  followParent: 0
+  z: 1
+  followParent: 1
 --- !u!1 &1927462197750070
 GameObject:
   m_ObjectHideFlags: 0
